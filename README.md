@@ -1,30 +1,34 @@
-# React + TypeScript + Vite
+# Projeto React Hook Form com TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
 
-Currently, two official plugins are available:
+O projeto React Hook Form com TypeScript é uma aplicação de exemplo que demonstra a implementação de um formulário de cadastro de usuário utilizando tecnologias como React, TypeScript, React Hook Form e Zod. O objetivo principal é mostrar como criar um formulário interativo, com validação de dados em tempo real e gerenciamento eficiente do estado.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
 
-## Expanding the ESLint configuration
+* Formulário de Cadastro: O formulário permite que o usuário insira informações como Nome, Sobrenome, Email, Gênero, Senha, Confirmação de Senha e Aceitação dos Termos de Uso.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+* Validação de Dados: A validação dos dados é realizada em tempo real utilizando a biblioteca Zod, garantindo que os campos sejam preenchidos corretamente.
 
-- Configure the top-level `parserOptions` property like this:
+* Hooks Personalizados: Foram criados hooks personalizados para os componentes do formulário, visando modularizar e reutilizar a lógica de forma eficiente.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+* Feedback ao Usuário: Mensagens de erro são exibidas dinamicamente para orientar o usuário durante o preenchimento do formulário.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Tecnologias Utilizadas
+
+* TypeScript
+* ReactJS
+* React Hook Form
+* Zod
+* HTML
+* CSS (com Tailwind CSS)
+
+## Imagens
+
+### Tela de Cadastro:
+
+![Tela de Cadastro](public/register.png)
+
+### Validação de Dados:
+
+![Tela de Validação](public/validations.png)
